@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dixi ponto</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <div class="grande">
+      <form action="" id="form">
+        <div class="cHoraria">
+          <label for="cHoraria">Carga horária</label>
+          <input type="text" name="" id="cHoraria" placeholder="00:00" />
+        </div>
+        <div class="marcacoes" id="marcacoes">
+          <label for="">Marcações: </label>
+          <input type="text" placeholder="00:00" />
+        </div>
+
+        <div>
+          <button class="btnadd" id="btnadd" type="button">
+            <strong>+</strong>
+          </button>
+          <button class="btnremove" id="btnremove" type="button">
+            <strong>-</strong>
+          </button>
+          <button class="btncalc" id="btncalc" type="button">
+            <strong>Calcular Horas</strong>
+          </button>
+        </div>
+        <div class="resultados">
+          <div class="linha">
+            <div class="coluna"><strong>HORAS TRABALHADAS</strong></div>
+            <div class="coluna"><strong>DÉBITO</strong></div>
+            <div class="coluna"><strong>CRÉDITO</strong></div>
+            <div class="coluna"><strong>ADICIONAL NOTURNO</strong></div>
+            <div class="coluna"><strong>INTERVALO</strong></div>
+          </div>
+          <div class="linha" id="linha">
+            <div class="coluna" id="horasTrabalhadas">00:00</div>
+            <div class="coluna" id="debitoHoras">00:00</div>
+            <div class="coluna" id="creditoHoras">00:00</div>
+            <div class="coluna" id="horasNoturnas">00:00</div>
+            <div class="coluna" id="intervalo">00:00</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
